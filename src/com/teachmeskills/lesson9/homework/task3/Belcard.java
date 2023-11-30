@@ -1,0 +1,33 @@
+package com.teachmeskills.lesson9.homework.task3;
+
+public class Belcard extends AbstractCard{
+    public static final double LIMIT = 2000;
+
+    public Belcard(long number, int cvc, double balance, int id, String currency) {
+        super(number, cvc, balance, id, currency);
+    }
+
+    @Override
+    public double getCommissionRate() {
+        return 0.02;  // 2% commission rate for Belcard
+    }
+
+    @Override
+    public double getExchangeRate(String currency) {
+        if (currency.equals("BYN")) {
+            return 0.85;  // Exchange rate for USD to Belcard's currency
+        } else {
+            return 1;  // No need for conversion as both currencies are the same
+        }
+    }
+
+    @Override
+    public void transfer(BankCard card, double amount) {
+
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+}
