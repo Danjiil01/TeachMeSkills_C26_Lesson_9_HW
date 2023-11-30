@@ -33,7 +33,4 @@ public class BankTransfer {
             System.out.println("Transfer failed! Insufficient balance.");
         }
     }
-
-    public static void transfer(AbstractCard fromCard, AbstractCard toCard, double transferAmount) {
-    }
 }

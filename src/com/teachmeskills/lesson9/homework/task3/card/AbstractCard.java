@@ -20,13 +20,24 @@ public abstract class AbstractCard implements IBankCard {
         return cardNumber;
     }
 
-    public int getCvc() {
-        return cvc;
-    }
-
     public double getBalance() {
         return balance;
     }
+
+    @Override
+    public void transfer(AbstractCard toCard, double transferAmount) {
+        // Проверяем, что на первой карте достаточно денег для перевода
+        if (this.balance >= transferAmount) {
+            // Вычитаем сумму перевода из баланса текущей карты
+            this.balance -= transferAmount;
+
+            // Прибавляем сумму перевода к балансу карты, на которую переводим
+            toCard.balance += transferAmount;
+        } else {
+            System.out.println("Not enough balance on the card to transfer");
+        }
+    }
+
 
     public String getCurrency() {
         return currency;
