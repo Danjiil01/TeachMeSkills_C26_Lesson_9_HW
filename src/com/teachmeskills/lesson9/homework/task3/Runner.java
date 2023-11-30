@@ -1,5 +1,11 @@
 package com.teachmeskills.lesson9.homework.task3;
 
+import com.teachmeskills.lesson9.homework.task3.banktransfer.BankTransfer;
+import com.teachmeskills.lesson9.homework.task3.card.AbstractCard;
+import com.teachmeskills.lesson9.homework.task3.card.Belcard;
+import com.teachmeskills.lesson9.homework.task3.card.Mastercard;
+import com.teachmeskills.lesson9.homework.task3.client.Client;
+
 import java.util.Scanner;
 
 public class Runner {

@@ -1,6 +1,6 @@
-package com.teachmeskills.lesson9.homework.task3;
+package com.teachmeskills.lesson9.homework.task3.card;
 
-public abstract class AbstractCard implements BankCard{
+public abstract class AbstractCard implements IBankCard {
     private long cardNumber;
     private int cvc;
     private double balance;

@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.homework.task3;
+package com.teachmeskills.lesson9.homework.task3.card;
 
 public class Visacard extends AbstractCard{
     public static final double LIMIT = 10000;
@@ -22,7 +22,7 @@ public class Visacard extends AbstractCard{
     }
 
     @Override
-    public void transfer(BankCard card, double amount) {
+    public void transfer(IBankCard card, double amount) {
 
     }
 

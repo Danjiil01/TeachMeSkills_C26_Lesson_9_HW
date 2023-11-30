@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.homework.task3;
+package com.teachmeskills.lesson9.homework.task3.card;
 
 public class Mastercard extends AbstractCard{
     public static final double LIMIT = 5000;
@@ -22,7 +22,7 @@ public class Mastercard extends AbstractCard{
     }
 
     @Override
-    public void transfer(BankCard card, double amount) {
+    public void transfer(IBankCard card, double amount) {
 
     }
 

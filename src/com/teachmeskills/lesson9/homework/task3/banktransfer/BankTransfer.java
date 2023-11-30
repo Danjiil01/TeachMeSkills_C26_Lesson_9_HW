@@ -1,4 +1,9 @@
-package com.teachmeskills.lesson9.homework.task3;
+package com.teachmeskills.lesson9.homework.task3.banktransfer;
+
+import com.teachmeskills.lesson9.homework.task3.card.AbstractCard;
+import com.teachmeskills.lesson9.homework.task3.card.Belcard;
+import com.teachmeskills.lesson9.homework.task3.card.Mastercard;
+import com.teachmeskills.lesson9.homework.task3.card.Visacard;
 
 public class BankTransfer {
     // Метод для перевода суммы с одной карты на другую
