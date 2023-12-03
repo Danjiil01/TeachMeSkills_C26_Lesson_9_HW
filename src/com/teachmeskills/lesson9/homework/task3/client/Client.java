@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson9.homework.task3.client;
 
-import com.teachmeskills.lesson9.homework.task3.card.AbstractCard;
+import com.teachmeskills.lesson9.homework.task3.card.impl.AbstractCard;
 
 public class Client {
     private String firstName;

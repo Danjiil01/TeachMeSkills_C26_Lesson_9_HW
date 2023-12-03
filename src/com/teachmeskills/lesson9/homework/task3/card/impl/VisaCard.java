@@ -1,6 +1,6 @@
-package com.teachmeskills.lesson9.homework.task3.card;
+package com.teachmeskills.lesson9.homework.task3.card.impl;
 
-public class VisaCard extends AbstractCard{
+public class VisaCard extends AbstractCard {
     public static final double LIMIT = 10000;
 
     public VisaCard(long number, int cvc, double balance, int id, String currency) {

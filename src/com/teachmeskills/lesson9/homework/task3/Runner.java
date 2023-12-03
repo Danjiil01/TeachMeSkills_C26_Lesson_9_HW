@@ -1,9 +1,9 @@
 package com.teachmeskills.lesson9.homework.task3;
 
 import com.teachmeskills.lesson9.homework.task3.banktransfer.BankTransfer;
-import com.teachmeskills.lesson9.homework.task3.card.AbstractCard;
-import com.teachmeskills.lesson9.homework.task3.card.BelCard;
-import com.teachmeskills.lesson9.homework.task3.card.MasterCard;
+import com.teachmeskills.lesson9.homework.task3.card.impl.AbstractCard;
+import com.teachmeskills.lesson9.homework.task3.card.impl.BelCard;
+import com.teachmeskills.lesson9.homework.task3.card.impl.MasterCard;
 import com.teachmeskills.lesson9.homework.task3.client.Client;
 
 import java.util.Scanner;
