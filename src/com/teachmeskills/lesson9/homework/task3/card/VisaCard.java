@@ -1,28 +1,28 @@
 package com.teachmeskills.lesson9.homework.task3.card;
 
-public class Mastercard extends AbstractCard{
-    public static final double LIMIT = 5000;
+public class VisaCard extends AbstractCard{
+    public static final double LIMIT = 10000;
 
-    public Mastercard(long number, int cvc, double balance, int id, String currency) {
+    public VisaCard(long number, int cvc, double balance, int id, String currency) {
         super(number, cvc, balance, id, currency);
     }
 
     @Override
     public double getCommissionRate() {
-        return 0.025;  // 2.5% commission rate for Mastercard
+        return 0.03;  // 3% commission rate for VisaCard
     }
 
     @Override
     public double getExchangeRate(String currency) {
-        if (currency.equals("EUR")) {
-            return 1.1;  // Exchange rate for EUR to Mastercard's currency
+        if (currency.equals("USD")) {
+            return 1.05;  // Exchange rate for USD/EUR to VisaCard's currency
         } else {
             return 1;  // No need for conversion as both currencies are the same
         }
     }
 
     @Override
-    public void transfer(IBankCard card, double amount) {
+    public void Transfer(IBankCard card, double amount) {
 
     }
 

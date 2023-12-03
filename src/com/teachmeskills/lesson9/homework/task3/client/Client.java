@@ -19,12 +19,12 @@ public class Client {
         this.numberOfCards = 0;
     }
 
-    public void addCard(AbstractCard card) {
+    public void AddCard(AbstractCard card) {
         cards[numberOfCards] = card;
         numberOfCards++;
     }
 
-    public AbstractCard findCardById(int cardId) {
+    public AbstractCard FindCardById(int cardId) {
         for (AbstractCard card : cards) {
             if (card != null && card.getId() == cardId) {
                 return card;
