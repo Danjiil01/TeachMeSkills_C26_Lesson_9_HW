@@ -22,7 +22,7 @@ public class MasterCard extends AbstractCard {
     }
 
     @Override
-    public void Transfer(IBankCard card, double amount) {
+    public void transfer(IBankCard card, double amount) {
 
     }
 

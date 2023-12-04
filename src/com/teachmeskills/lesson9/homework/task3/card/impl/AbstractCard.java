@@ -25,7 +25,7 @@ public abstract class AbstractCard implements IBankCard {
     }
 
     @Override
-    public void Transfer(AbstractCard toCard, double transferAmount) {
+    public void transfer(AbstractCard toCard, double transferAmount) {
         // Проверяем, что на первой карте достаточно денег для перевода
         if (this.balance >= transferAmount) {
             // Вычитаем сумму перевода из баланса текущей карты
@@ -43,11 +43,11 @@ public abstract class AbstractCard implements IBankCard {
         return currency;
     }
 
-    public void Withdraw(double amount) {
+    public void withdraw(double amount) {
         balance -= amount;
     }
 
-    public void Deposit(double amount) {
+    public void deposit(double amount) {
         balance += amount;
     }
 

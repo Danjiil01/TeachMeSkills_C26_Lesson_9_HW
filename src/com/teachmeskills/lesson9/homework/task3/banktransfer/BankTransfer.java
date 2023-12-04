@@ -12,15 +12,15 @@ public class BankTransfer {
         if (fromCard.getBalance() >= amount) {
             // Проверка лимитов для карты fromCard
             if (fromCard instanceof BelCard && amount <= BelCard.LIMIT) {
-                fromCard.Withdraw(amount);  // Списание суммы с карты fromCard
+                fromCard.withdraw(amount);  // Списание суммы с карты fromCard
                 // Конвертация суммы, если валюта карты fromCard отличается от валюты карты toCard
                 if (!fromCard.getCurrency().equals(toCard.getCurrency())) {
                     amount = amount * fromCard.getExchangeRate(toCard.getCurrency());
                 }
-                toCard.Deposit(amount);  // Зачисление суммы на карту toCard
+                toCard.deposit(amount);  // Зачисление суммы на карту toCard
                 // Расчет и учет комиссии
                 double commission = amount * fromCard.getCommissionRate();
-                fromCard.Withdraw(commission);
+                fromCard.withdraw(commission);
                 System.out.println("Transfer successful!");
             } else if (fromCard instanceof MasterCard && amount <= MasterCard.LIMIT) {
                 // Аналогичные проверки и действия для карт типа MasterCard
