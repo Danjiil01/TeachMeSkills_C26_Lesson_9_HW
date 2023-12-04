@@ -7,7 +7,7 @@ import com.teachmeskills.lesson9.homework.task3.card.impl.VisaCard;
 
 public class BankTransfer {
     // Метод для перевода суммы с одной карты на другую
-    public static void CardTransfer(AbstractCard fromCard, AbstractCard toCard, double amount) {
+    public static void cardTransfer(AbstractCard fromCard, AbstractCard toCard, double amount) {
         // Проверка наличия суммы для перевода на карте fromCard
         if (fromCard.getBalance() >= amount) {
             // Проверка лимитов для карты fromCard

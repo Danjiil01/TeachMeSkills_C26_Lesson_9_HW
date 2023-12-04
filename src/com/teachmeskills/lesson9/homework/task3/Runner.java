@@ -33,7 +33,7 @@ public class Runner {
         // проверка наличия карт и выполнение перевода
         if (fromCard != null && toCard != null) {
             // выполнение перевода
-            BankTransfer.CardTransfer(fromCard, toCard, transferAmount);
+            BankTransfer.cardTransfer(fromCard, toCard, transferAmount);
         } else {
             System.out.println("Transfer failed! Invalid card id.");
         }
